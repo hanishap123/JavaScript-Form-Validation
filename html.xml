@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+
+body {background-color: powderblue;}
+h1   {color: red;}
+
+</style>
+
+<div class="header">
+<h1>Customer Information</h1>
+</div>
+
+<form action="/action_page.php">
+   <label for="fname">First name:</label><br>
+   <input type="text" id="fname" name = "fname"><br>
+   <label for="lname">Last name:</label><br>
+   <input type="text" id="lname" name = "lname"><br>
+   <label for="email">Email:</label><br>
+   <input type="text" id="email" name = "email">
+   <input type="submit" value="Submit">
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
